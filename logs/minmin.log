@@ -1,0 +1,448 @@
+[2015-12-29 09:38:32,782][INFO ][node                     ] [node-1] version[2.1.1], pid[6419], build[40e2c53/2015-12-15T13:05:55Z]
+[2015-12-29 09:38:32,784][INFO ][node                     ] [node-1] initializing ...
+[2015-12-29 09:38:33,732][ERROR][analysis-ik              ] path
+[2015-12-29 09:38:33,741][INFO ][plugins                  ] [node-1] loaded [${elasticsearch.plugin.name}], sites []
+[2015-12-29 09:38:33,876][INFO ][env                      ] [node-1] using [1] data paths, mounts [[/home (/dev/sda10)]], net usable_space [36.2gb], net total_space [44.6gb], spins? [possibly], types [ext4]
+[2015-12-29 09:38:38,055][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2015-12-29 09:38:38,056][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2015-12-29 09:38:38,139][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2015-12-29 09:38:39,457][INFO ][node                     ] [node-1] initialized
+[2015-12-29 09:38:39,458][INFO ][node                     ] [node-1] starting ...
+[2015-12-29 09:38:39,739][INFO ][transport                ] [node-1] publish_address {minmin/192.168.10.190:9300}, bound_addresses {192.168.10.190:9300}
+[2015-12-29 09:38:39,762][INFO ][discovery                ] [node-1] minmin/Uda9xnxSSxylKT2vXE42ow
+[2015-12-29 09:38:42,814][INFO ][cluster.service          ] [node-1] new_master {node-1}{Uda9xnxSSxylKT2vXE42ow}{192.168.10.190}{minmin/192.168.10.190:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2015-12-29 09:38:42,849][INFO ][http                     ] [node-1] publish_address {minmin/192.168.10.190:9201}, bound_addresses {192.168.10.190:9201}
+[2015-12-29 09:38:42,849][INFO ][node                     ] [node-1] started
+[2015-12-29 09:38:43,014][INFO ][gateway                  ] [node-1] recovered [0] indices into cluster_state
+[2015-12-29 09:40:12,899][INFO ][cluster.service          ] [node-1] added {{node-2}{4Ns2LQiuS-iOGFupUhkYQA}{192.168.10.190}{192.168.10.190:9301},}, reason: zen-disco-join(join from node[{node-2}{4Ns2LQiuS-iOGFupUhkYQA}{192.168.10.190}{192.168.10.190:9301}])
+[2015-12-29 09:44:29,327][INFO ][cluster.service          ] [node-1] added {{nodezengfen}{haBBimOJSACSyLURFFcwCg}{192.168.10.171}{192.168.10.171:9300},}, reason: zen-disco-join(join from node[{nodezengfen}{haBBimOJSACSyLURFFcwCg}{192.168.10.171}{192.168.10.171:9300}])
+[2015-12-29 09:45:34,575][INFO ][cluster.service          ] [node-1] added {{nodezengfen1}{TlenDhSPR7eZRc176o3J1Q}{192.168.10.171}{192.168.10.171:9301},}, reason: zen-disco-join(join from node[{nodezengfen1}{TlenDhSPR7eZRc176o3J1Q}{192.168.10.171}{192.168.10.171:9301}])
+[2015-12-29 09:46:58,105][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [haBBimOJSACSyLURFFcwCg]
+ReceiveTimeoutTransportException[[nodezengfen][192.168.10.171:9300][cluster:monitor/nodes/stats[n]] request_id [646] timed out after [15000ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 09:47:43,104][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [TlenDhSPR7eZRc176o3J1Q]
+ReceiveTimeoutTransportException[[nodezengfen1][192.168.10.171:9301][cluster:monitor/nodes/stats[n]] request_id [722] timed out after [15000ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 09:47:43,105][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [haBBimOJSACSyLURFFcwCg]
+ReceiveTimeoutTransportException[[nodezengfen][192.168.10.171:9300][cluster:monitor/nodes/stats[n]] request_id [724] timed out after [15000ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 09:48:08,849][INFO ][cluster.service          ] [node-1] added {{nodezengfen1}{ZP7wW4onT-qFejjIroUuwQ}{192.168.10.171}{192.168.10.171:9302},}, reason: zen-disco-join(join from node[{nodezengfen1}{ZP7wW4onT-qFejjIroUuwQ}{192.168.10.171}{192.168.10.171:9302}])
+[2015-12-29 09:48:28,106][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [TlenDhSPR7eZRc176o3J1Q]
+ReceiveTimeoutTransportException[[nodezengfen1][192.168.10.171:9301][cluster:monitor/nodes/stats[n]] request_id [780] timed out after [15000ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 09:48:28,106][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [haBBimOJSACSyLURFFcwCg]
+ReceiveTimeoutTransportException[[nodezengfen][192.168.10.171:9300][cluster:monitor/nodes/stats[n]] request_id [781] timed out after [15000ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 09:48:38,851][WARN ][discovery.zen.publish    ] [node-1] timed out waiting for all nodes to process published state [6] (timeout [30s], pending nodes: [{nodezengfen}{haBBimOJSACSyLURFFcwCg}{192.168.10.171}{192.168.10.171:9300}, {nodezengfen1}{TlenDhSPR7eZRc176o3J1Q}{192.168.10.171}{192.168.10.171:9301}])
+[2015-12-29 09:48:38,853][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [ZP7wW4onT-qFejjIroUuwQ]
+SendRequestTransportException[[nodezengfen1][192.168.10.171:9302][cluster:monitor/nodes/stats[n]]]; nested: NodeNotConnectedException[[nodezengfen1][192.168.10.171:9302] Node not connected];
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:323)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.start(TransportNodesAction.java:147)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.access$100(TransportNodesAction.java:94)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:68)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:44)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:70)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateNodeStats(InternalClusterInfoService.java:286)
+	at org.elasticsearch.cluster.InternalClusterInfoService.refresh(InternalClusterInfoService.java:323)
+	at org.elasticsearch.cluster.InternalClusterInfoService.maybeRefresh(InternalClusterInfoService.java:307)
+	at org.elasticsearch.cluster.InternalClusterInfoService.access$600(InternalClusterInfoService.java:66)
+	at org.elasticsearch.cluster.InternalClusterInfoService$2.run(InternalClusterInfoService.java:199)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: NodeNotConnectedException[[nodezengfen1][192.168.10.171:9302] Node not connected]
+	at org.elasticsearch.transport.netty.NettyTransport.nodeChannel(NettyTransport.java:1096)
+	at org.elasticsearch.transport.netty.NettyTransport.sendRequest(NettyTransport.java:783)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:312)
+	... 13 more
+[2015-12-29 09:48:38,853][WARN ][cluster.service          ] [node-1] cluster state update task [zen-disco-join(join from node[{nodezengfen1}{ZP7wW4onT-qFejjIroUuwQ}{192.168.10.171}{192.168.10.171:9302}])] took 30s above the warn threshold of 30s
+[2015-12-29 09:48:38,856][INFO ][cluster.service          ] [node-1] removed {{nodezengfen1}{ZP7wW4onT-qFejjIroUuwQ}{192.168.10.171}{192.168.10.171:9302},}, reason: zen-disco-node_left({nodezengfen1}{ZP7wW4onT-qFejjIroUuwQ}{192.168.10.171}{192.168.10.171:9302})
+[2015-12-29 09:48:53,853][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [TlenDhSPR7eZRc176o3J1Q]
+ReceiveTimeoutTransportException[[nodezengfen1][192.168.10.171:9301][cluster:monitor/nodes/stats[n]] request_id [814] timed out after [15000ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 09:48:53,853][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [haBBimOJSACSyLURFFcwCg]
+ReceiveTimeoutTransportException[[nodezengfen][192.168.10.171:9300][cluster:monitor/nodes/stats[n]] request_id [813] timed out after [15000ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 09:48:58,107][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [ZP7wW4onT-qFejjIroUuwQ]
+SendRequestTransportException[[nodezengfen1][192.168.10.171:9302][cluster:monitor/nodes/stats[n]]]; nested: NodeNotConnectedException[[nodezengfen1][192.168.10.171:9302] Node not connected];
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:323)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.start(TransportNodesAction.java:147)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.access$100(TransportNodesAction.java:94)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:68)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:44)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:70)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateNodeStats(InternalClusterInfoService.java:286)
+	at org.elasticsearch.cluster.InternalClusterInfoService.refresh(InternalClusterInfoService.java:323)
+	at org.elasticsearch.cluster.InternalClusterInfoService.maybeRefresh(InternalClusterInfoService.java:307)
+	at org.elasticsearch.cluster.InternalClusterInfoService.access$600(InternalClusterInfoService.java:66)
+	at org.elasticsearch.cluster.InternalClusterInfoService$SubmitReschedulingClusterInfoUpdatedJob$1.run(InternalClusterInfoService.java:252)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: NodeNotConnectedException[[nodezengfen1][192.168.10.171:9302] Node not connected]
+	at org.elasticsearch.transport.netty.NettyTransport.nodeChannel(NettyTransport.java:1096)
+	at org.elasticsearch.transport.netty.NettyTransport.sendRequest(NettyTransport.java:783)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:312)
+	... 13 more
+[2015-12-29 09:49:00,661][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [140071ms] ago, timed out [110070ms] ago, action [internal:discovery/zen/fd/ping], node [{nodezengfen}{haBBimOJSACSyLURFFcwCg}{192.168.10.171}{192.168.10.171:9300}], id [639]
+[2015-12-29 09:49:00,665][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [92561ms] ago, timed out [77561ms] ago, action [cluster:monitor/nodes/stats[n]], node [{nodezengfen}{haBBimOJSACSyLURFFcwCg}{192.168.10.171}{192.168.10.171:9300}], id [724]
+[2015-12-29 09:49:00,666][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [110334ms] ago, timed out [80334ms] ago, action [internal:discovery/zen/fd/ping], node [{nodezengfen1}{TlenDhSPR7eZRc176o3J1Q}{192.168.10.171}{192.168.10.171:9301}], id [702]
+[2015-12-29 09:49:00,670][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [110079ms] ago, timed out [80079ms] ago, action [internal:discovery/zen/fd/ping], node [{nodezengfen}{haBBimOJSACSyLURFFcwCg}{192.168.10.171}{192.168.10.171:9300}], id [704]
+[2015-12-29 09:49:00,671][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [47566ms] ago, timed out [32566ms] ago, action [cluster:monitor/nodes/stats[n]], node [{nodezengfen1}{TlenDhSPR7eZRc176o3J1Q}{192.168.10.171}{192.168.10.171:9301}], id [780]
+[2015-12-29 09:49:00,672][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [92568ms] ago, timed out [77568ms] ago, action [cluster:monitor/nodes/stats[n]], node [{nodezengfen1}{TlenDhSPR7eZRc176o3J1Q}{192.168.10.171}{192.168.10.171:9301}], id [722]
+[2015-12-29 09:49:00,708][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [80117ms] ago, timed out [50116ms] ago, action [internal:discovery/zen/fd/ping], node [{nodezengfen}{haBBimOJSACSyLURFFcwCg}{192.168.10.171}{192.168.10.171:9300}], id [740]
+[2015-12-29 09:49:00,722][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [80389ms] ago, timed out [50389ms] ago, action [internal:discovery/zen/fd/ping], node [{nodezengfen1}{TlenDhSPR7eZRc176o3J1Q}{192.168.10.171}{192.168.10.171:9301}], id [738]
+[2015-12-29 09:49:00,724][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [50391ms] ago, timed out [20391ms] ago, action [internal:discovery/zen/fd/ping], node [{nodezengfen1}{TlenDhSPR7eZRc176o3J1Q}{192.168.10.171}{192.168.10.171:9301}], id [776]
+[2015-12-29 09:49:00,725][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [47620ms] ago, timed out [32620ms] ago, action [cluster:monitor/nodes/stats[n]], node [{nodezengfen}{haBBimOJSACSyLURFFcwCg}{192.168.10.171}{192.168.10.171:9300}], id [781]
+[2015-12-29 09:49:00,727][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [137624ms] ago, timed out [122624ms] ago, action [cluster:monitor/nodes/stats[n]], node [{nodezengfen}{haBBimOJSACSyLURFFcwCg}{192.168.10.171}{192.168.10.171:9300}], id [646]
+[2015-12-29 09:49:00,730][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [21877ms] ago, timed out [6877ms] ago, action [cluster:monitor/nodes/stats[n]], node [{nodezengfen1}{TlenDhSPR7eZRc176o3J1Q}{192.168.10.171}{192.168.10.171:9301}], id [814]
+[2015-12-29 09:49:00,743][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [21890ms] ago, timed out [6890ms] ago, action [cluster:monitor/nodes/stats[n]], node [{nodezengfen}{haBBimOJSACSyLURFFcwCg}{192.168.10.171}{192.168.10.171:9300}], id [813]
+[2015-12-29 09:49:00,766][INFO ][cluster.service          ] [node-1] removed {{nodezengfen}{haBBimOJSACSyLURFFcwCg}{192.168.10.171}{192.168.10.171:9300},}, reason: zen-disco-node_failed({nodezengfen}{haBBimOJSACSyLURFFcwCg}{192.168.10.171}{192.168.10.171:9300}), reason failed to ping, tried [3] times, each with maximum [30s] timeout
+[2015-12-29 09:49:00,773][INFO ][cluster.service          ] [node-1] removed {{nodezengfen1}{TlenDhSPR7eZRc176o3J1Q}{192.168.10.171}{192.168.10.171:9301},}, reason: zen-disco-node_failed({nodezengfen1}{TlenDhSPR7eZRc176o3J1Q}{192.168.10.171}{192.168.10.171:9301}), reason failed to ping, tried [3] times, each with maximum [30s] timeout
+[2015-12-29 09:49:00,781][INFO ][cluster.service          ] [node-1] added {{nodezengfen}{PJzjsCBSRnaq6Qw7tasgmQ}{192.168.10.171}{192.168.10.171:9302},}, reason: zen-disco-join(join from node[{nodezengfen}{PJzjsCBSRnaq6Qw7tasgmQ}{192.168.10.171}{192.168.10.171:9302}])
+[2015-12-29 09:49:00,825][WARN ][cluster.service          ] [node-1] failed to connect to node [{nodezengfen}{PJzjsCBSRnaq6Qw7tasgmQ}{192.168.10.171}{192.168.10.171:9302}]
+ConnectTransportException[[nodezengfen][192.168.10.171:9302] connect_timeout[30s]]; nested: ConnectException[拒绝连接: /192.168.10.171:9302];
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:951)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:884)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:857)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:243)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:474)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:231)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:194)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: 拒绝连接: /192.168.10.171:9302
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2015-12-29 09:49:00,852][INFO ][cluster.service          ] [node-1] removed {{nodezengfen}{PJzjsCBSRnaq6Qw7tasgmQ}{192.168.10.171}{192.168.10.171:9302},}, reason: zen-disco-node_failed({nodezengfen}{PJzjsCBSRnaq6Qw7tasgmQ}{192.168.10.171}{192.168.10.171:9302}), reason transport disconnected
+[2015-12-29 09:49:00,852][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [PJzjsCBSRnaq6Qw7tasgmQ]
+SendRequestTransportException[[nodezengfen][192.168.10.171:9302][cluster:monitor/nodes/stats[n]]]; nested: NodeNotConnectedException[[nodezengfen][192.168.10.171:9302] Node not connected];
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:323)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.start(TransportNodesAction.java:147)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.access$100(TransportNodesAction.java:94)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:68)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:44)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:70)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateNodeStats(InternalClusterInfoService.java:286)
+	at org.elasticsearch.cluster.InternalClusterInfoService.refresh(InternalClusterInfoService.java:323)
+	at org.elasticsearch.cluster.InternalClusterInfoService.maybeRefresh(InternalClusterInfoService.java:307)
+	at org.elasticsearch.cluster.InternalClusterInfoService.access$600(InternalClusterInfoService.java:66)
+	at org.elasticsearch.cluster.InternalClusterInfoService$2.run(InternalClusterInfoService.java:199)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: NodeNotConnectedException[[nodezengfen][192.168.10.171:9302] Node not connected]
+	at org.elasticsearch.transport.netty.NettyTransport.nodeChannel(NettyTransport.java:1096)
+	at org.elasticsearch.transport.netty.NettyTransport.sendRequest(NettyTransport.java:783)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:312)
+	... 13 more
+[2015-12-29 09:49:22,827][INFO ][cluster.service          ] [node-1] added {{nodezengfen}{nWFNnuaBRl6O0JexqXBezw}{192.168.10.171}{192.168.10.171:9300},}, reason: zen-disco-join(join from node[{nodezengfen}{nWFNnuaBRl6O0JexqXBezw}{192.168.10.171}{192.168.10.171:9300}])
+[2015-12-29 09:50:03,089][INFO ][cluster.service          ] [node-1] added {{nodezengfen1}{IFnfnHjcTneIALvdyLIh0w}{192.168.10.171}{192.168.10.171:9301},}, reason: zen-disco-join(join from node[{nodezengfen1}{IFnfnHjcTneIALvdyLIh0w}{192.168.10.171}{192.168.10.171:9301}])
+[2015-12-29 09:56:27,885][INFO ][cluster.service          ] [node-1] added {{node-mting}{ywXcJJZkToKW7g8ZSkM4ag}{192.168.10.154}{192.168.10.154:9302},}, reason: zen-disco-join(join from node[{node-mting}{ywXcJJZkToKW7g8ZSkM4ag}{192.168.10.154}{192.168.10.154:9302}])
+[2015-12-29 09:56:28,164][INFO ][cluster.service          ] [node-1] removed {{node-mting}{ywXcJJZkToKW7g8ZSkM4ag}{192.168.10.154}{192.168.10.154:9302},}, reason: zen-disco-node_left({node-mting}{ywXcJJZkToKW7g8ZSkM4ag}{192.168.10.154}{192.168.10.154:9302})
+[2015-12-29 09:56:28,208][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [ywXcJJZkToKW7g8ZSkM4ag]
+NodeDisconnectedException[[node-mting][192.168.10.154:9302][cluster:monitor/nodes/stats[n]] disconnected]
+[2015-12-29 09:57:27,685][INFO ][cluster.service          ] [node-1] added {{node-mting}{CVOskWxMQR2Ob9pfDwhNoQ}{192.168.10.154}{192.168.10.154:9300},}, reason: zen-disco-join(join from node[{node-mting}{CVOskWxMQR2Ob9pfDwhNoQ}{192.168.10.154}{192.168.10.154:9300}])
+[2015-12-29 09:57:40,691][INFO ][cluster.service          ] [node-1] added {{node-mting2}{2Yl-P_U9QPqysDOohD1tkw}{192.168.10.154}{192.168.10.154:9301},}, reason: zen-disco-join(join from node[{node-mting2}{2Yl-P_U9QPqysDOohD1tkw}{192.168.10.154}{192.168.10.154:9301}])
+[2015-12-29 09:58:58,201][INFO ][cluster.service          ] [node-1] removed {{node-mting2}{2Yl-P_U9QPqysDOohD1tkw}{192.168.10.154}{192.168.10.154:9301},}, reason: zen-disco-node_left({node-mting2}{2Yl-P_U9QPqysDOohD1tkw}{192.168.10.154}{192.168.10.154:9301})
+[2015-12-29 09:58:58,341][INFO ][cluster.service          ] [node-1] removed {{node-mting}{CVOskWxMQR2Ob9pfDwhNoQ}{192.168.10.154}{192.168.10.154:9300},}, reason: zen-disco-node_left({node-mting}{CVOskWxMQR2Ob9pfDwhNoQ}{192.168.10.154}{192.168.10.154:9300})
+[2015-12-29 09:59:15,333][INFO ][cluster.service          ] [node-1] added {{node-mting}{2wju5IPeR1a-4tOT10jksQ}{192.168.10.154}{192.168.10.154:9300},}, reason: zen-disco-join(join from node[{node-mting}{2wju5IPeR1a-4tOT10jksQ}{192.168.10.154}{192.168.10.154:9300}])
+[2015-12-29 09:59:32,802][INFO ][cluster.service          ] [node-1] added {{node-mting2}{fKRzejO5Ty6MWyk8ysz2Ig}{192.168.10.154}{192.168.10.154:9301},}, reason: zen-disco-join(join from node[{node-mting2}{fKRzejO5Ty6MWyk8ysz2Ig}{192.168.10.154}{192.168.10.154:9301}])
+[2015-12-29 10:01:20,171][INFO ][cluster.service          ] [node-1] removed {{node-mting2}{fKRzejO5Ty6MWyk8ysz2Ig}{192.168.10.154}{192.168.10.154:9301},}, reason: zen-disco-node_left({node-mting2}{fKRzejO5Ty6MWyk8ysz2Ig}{192.168.10.154}{192.168.10.154:9301})
+[2015-12-29 10:01:20,320][INFO ][cluster.service          ] [node-1] removed {{node-mting}{2wju5IPeR1a-4tOT10jksQ}{192.168.10.154}{192.168.10.154:9300},}, reason: zen-disco-node_left({node-mting}{2wju5IPeR1a-4tOT10jksQ}{192.168.10.154}{192.168.10.154:9300})
+[2015-12-29 10:01:42,427][INFO ][cluster.service          ] [node-1] added {{node-mting}{mvdzvlgiRGKV-mPg7In1pg}{192.168.10.154}{192.168.10.154:9300},}, reason: zen-disco-join(join from node[{node-mting}{mvdzvlgiRGKV-mPg7In1pg}{192.168.10.154}{192.168.10.154:9300}])
+[2015-12-29 10:01:54,539][INFO ][cluster.service          ] [node-1] added {{node-mting2}{XuVmqvjgSOGw9Qvw3SVEmQ}{192.168.10.154}{192.168.10.154:9301},}, reason: zen-disco-join(join from node[{node-mting2}{XuVmqvjgSOGw9Qvw3SVEmQ}{192.168.10.154}{192.168.10.154:9301}])
+[2015-12-29 10:12:02,675][INFO ][cluster.service          ] [node-1] added {{node-mting3}{vM8XIuX3TqqKnHw4TF9MQA}{192.168.10.154}{192.168.10.154:9302},}, reason: zen-disco-join(join from node[{node-mting3}{vM8XIuX3TqqKnHw4TF9MQA}{192.168.10.154}{192.168.10.154:9302}])
+[2015-12-29 10:18:31,996][INFO ][cluster.service          ] [node-1] added {{荷兰猪}{rbRS4N2gRyCezqgu88NnxQ}{192.168.10.199}{192.168.10.199:9300},}, reason: zen-disco-join(join from node[{荷兰猪}{rbRS4N2gRyCezqgu88NnxQ}{192.168.10.199}{192.168.10.199:9300}])
+[2015-12-29 10:23:06,102][INFO ][cluster.metadata         ] [node-1] [.kibana] creating index, cause [api], templates [], shards [1]/[1], mappings [config]
+[2015-12-29 10:25:20,614][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [vM8XIuX3TqqKnHw4TF9MQA]
+ReceiveTimeoutTransportException[[node-mting3][192.168.10.154:9302][cluster:monitor/nodes/stats[n]] request_id [11911] timed out after [15000ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 10:25:20,615][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [mvdzvlgiRGKV-mPg7In1pg]
+ReceiveTimeoutTransportException[[node-mting][192.168.10.154:9300][cluster:monitor/nodes/stats[n]] request_id [11914] timed out after [15001ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 10:25:20,615][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [rbRS4N2gRyCezqgu88NnxQ]
+ReceiveTimeoutTransportException[[荷兰猪][192.168.10.199:9300][cluster:monitor/nodes/stats[n]] request_id [11913] timed out after [15001ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 10:25:20,617][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [nWFNnuaBRl6O0JexqXBezw]
+ReceiveTimeoutTransportException[[nodezengfen][192.168.10.171:9300][cluster:monitor/nodes/stats[n]] request_id [11917] timed out after [15003ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 10:25:20,617][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [IFnfnHjcTneIALvdyLIh0w]
+ReceiveTimeoutTransportException[[nodezengfen1][192.168.10.171:9301][cluster:monitor/nodes/stats[n]] request_id [11915] timed out after [15003ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 10:25:20,617][DEBUG][action.admin.cluster.node.stats] [node-1] failed to execute on node [XuVmqvjgSOGw9Qvw3SVEmQ]
+ReceiveTimeoutTransportException[[node-mting2][192.168.10.154:9301][cluster:monitor/nodes/stats[n]] request_id [11918] timed out after [15003ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 10:25:59,020][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [53406ms] ago, timed out [38405ms] ago, action [cluster:monitor/nodes/stats[n]], node [{荷兰猪}{rbRS4N2gRyCezqgu88NnxQ}{192.168.10.199}{192.168.10.199:9300}], id [11913]
+[2015-12-29 10:26:01,068][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [55454ms] ago, timed out [40451ms] ago, action [cluster:monitor/nodes/stats[n]], node [{nodezengfen1}{IFnfnHjcTneIALvdyLIh0w}{192.168.10.171}{192.168.10.171:9301}], id [11915]
+[2015-12-29 10:26:01,075][WARN ][transport                ] [node-1] Received response for a request that has timed out, sent [55461ms] ago, timed out [40458ms] ago, action [cluster:monitor/nodes/stats[n]], node [{nodezengfen}{nWFNnuaBRl6O0JexqXBezw}{192.168.10.171}{192.168.10.171:9300}], id [11917]
+[2015-12-29 10:26:11,778][INFO ][cluster.service          ] [node-1] removed {{node-mting3}{vM8XIuX3TqqKnHw4TF9MQA}{192.168.10.154}{192.168.10.154:9302},}, reason: zen-disco-node_failed({node-mting3}{vM8XIuX3TqqKnHw4TF9MQA}{192.168.10.154}{192.168.10.154:9302}), reason failed to ping, tried [3] times, each with maximum [30s] timeout
+[2015-12-29 10:26:11,921][INFO ][cluster.routing          ] [node-1] delaying allocation for [1] unassigned shards, next check in [59.8s]
+[2015-12-29 10:26:11,983][DEBUG][action.admin.indices.stats] [node-1] failed to execute [indices:monitor/stats] on node [vM8XIuX3TqqKnHw4TF9MQA]
+NodeDisconnectedException[[node-mting3][192.168.10.154:9302][indices:monitor/stats[n]] disconnected]
+[2015-12-29 10:26:11,983][INFO ][cluster.service          ] [node-1] removed {{nodezengfen}{nWFNnuaBRl6O0JexqXBezw}{192.168.10.171}{192.168.10.171:9300},}, reason: zen-disco-node_failed({nodezengfen}{nWFNnuaBRl6O0JexqXBezw}{192.168.10.171}{192.168.10.171:9300}), reason failed to ping, tried [3] times, each with maximum [30s] timeout
+[2015-12-29 10:26:12,716][INFO ][cluster.service          ] [node-1] removed {{node-mting}{mvdzvlgiRGKV-mPg7In1pg}{192.168.10.154}{192.168.10.154:9300},}, reason: zen-disco-node_failed({node-mting}{mvdzvlgiRGKV-mPg7In1pg}{192.168.10.154}{192.168.10.154:9300}), reason failed to ping, tried [3] times, each with maximum [30s] timeout
+[2015-12-29 10:26:12,745][INFO ][cluster.service          ] [node-1] removed {{node-mting2}{XuVmqvjgSOGw9Qvw3SVEmQ}{192.168.10.154}{192.168.10.154:9301},}, reason: zen-disco-node_failed({node-mting2}{XuVmqvjgSOGw9Qvw3SVEmQ}{192.168.10.154}{192.168.10.154:9301}), reason failed to ping, tried [3] times, each with maximum [30s] timeout
+[2015-12-29 10:26:12,769][INFO ][cluster.service          ] [node-1] removed {{荷兰猪}{rbRS4N2gRyCezqgu88NnxQ}{192.168.10.199}{192.168.10.199:9300},}, reason: zen-disco-node_failed({荷兰猪}{rbRS4N2gRyCezqgu88NnxQ}{192.168.10.199}{192.168.10.199:9300}), reason failed to ping, tried [3] times, each with maximum [30s] timeout
+[2015-12-29 10:26:12,800][INFO ][cluster.service          ] [node-1] removed {{nodezengfen1}{IFnfnHjcTneIALvdyLIh0w}{192.168.10.171}{192.168.10.171:9301},}, reason: zen-disco-node_failed({nodezengfen1}{IFnfnHjcTneIALvdyLIh0w}{192.168.10.171}{192.168.10.171:9301}), reason failed to ping, tried [3] times, each with maximum [30s] timeout
+[2015-12-29 10:26:14,958][INFO ][cluster.service          ] [node-1] added {{nodezengfen1}{IFnfnHjcTneIALvdyLIh0w}{192.168.10.171}{192.168.10.171:9301},}, reason: zen-disco-join(join from node[{nodezengfen1}{IFnfnHjcTneIALvdyLIh0w}{192.168.10.171}{192.168.10.171:9301}])
+[2015-12-29 10:26:15,324][INFO ][cluster.service          ] [node-1] added {{node-mting3}{vM8XIuX3TqqKnHw4TF9MQA}{192.168.10.154}{192.168.10.154:9302},}, reason: zen-disco-join(join from node[{node-mting3}{vM8XIuX3TqqKnHw4TF9MQA}{192.168.10.154}{192.168.10.154:9302}])
+[2015-12-29 10:26:15,467][INFO ][cluster.service          ] [node-1] added {{node-mting2}{XuVmqvjgSOGw9Qvw3SVEmQ}{192.168.10.154}{192.168.10.154:9301},{node-mting}{mvdzvlgiRGKV-mPg7In1pg}{192.168.10.154}{192.168.10.154:9300},}, reason: zen-disco-join(join from node[{node-mting}{mvdzvlgiRGKV-mPg7In1pg}{192.168.10.154}{192.168.10.154:9300}])
+[2015-12-29 10:26:15,593][INFO ][cluster.service          ] [node-1] added {{nodezengfen}{nWFNnuaBRl6O0JexqXBezw}{192.168.10.171}{192.168.10.171:9300},}, reason: zen-disco-join(join from node[{node-mting2}{XuVmqvjgSOGw9Qvw3SVEmQ}{192.168.10.154}{192.168.10.154:9301}])
+[2015-12-29 10:26:22,468][INFO ][cluster.service          ] [node-1] added {{荷兰猪}{rbRS4N2gRyCezqgu88NnxQ}{192.168.10.199}{192.168.10.199:9300},}, reason: zen-disco-join(join from node[{荷兰猪}{rbRS4N2gRyCezqgu88NnxQ}{192.168.10.199}{192.168.10.199:9300}])
+[2015-12-29 10:26:28,210][WARN ][transport.netty          ] [node-1] exception caught on transport layer [[id: 0x75c9f91e, /192.168.10.154:42308 => /192.168.10.190:9300]], closing connection
+java.io.IOException: 连接被对端重置
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 10:26:30,057][WARN ][transport.netty          ] [node-1] exception caught on transport layer [[id: 0x3514037c, /192.168.10.199:52873 => /192.168.10.190:9300]], closing connection
+java.io.IOException: 连接被对端重置
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 10:37:38,879][INFO ][node                     ] [node-1] stopping ...
+[2015-12-29 10:37:38,967][INFO ][node                     ] [node-1] stopped
+[2015-12-29 10:37:38,968][INFO ][node                     ] [node-1] closing ...
+[2015-12-29 10:37:38,977][INFO ][node                     ] [node-1] closed
+[2015-12-29 19:49:01,464][INFO ][node                     ] [node-1] version[2.1.1], pid[4162], build[40e2c53/2015-12-15T13:05:55Z]
+[2015-12-29 19:49:01,493][INFO ][node                     ] [node-1] initializing ...
+[2015-12-29 19:49:02,464][ERROR][analysis-ik              ] path
+[2015-12-29 19:49:02,474][INFO ][plugins                  ] [node-1] loaded [${elasticsearch.plugin.name}], sites []
+[2015-12-29 19:49:02,554][INFO ][env                      ] [node-1] using [1] data paths, mounts [[/home (/dev/sda10)]], net usable_space [36.1gb], net total_space [44.6gb], spins? [possibly], types [ext4]
+[2015-12-29 19:49:09,995][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2015-12-29 19:49:10,015][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2015-12-29 19:49:10,114][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2015-12-29 19:49:12,493][INFO ][node                     ] [node-1] initialized
+[2015-12-29 19:49:12,493][INFO ][node                     ] [node-1] starting ...
+[2015-12-29 19:49:13,599][INFO ][transport                ] [node-1] publish_address {minmin/172.27.23.3:9300}, bound_addresses {172.27.23.3:9300}
+[2015-12-29 19:49:13,693][INFO ][discovery                ] [node-1] minmin/4tUeueT4Qh65U4z-R_BAng
+[2015-12-29 19:49:16,738][INFO ][cluster.service          ] [node-1] new_master {node-1}{4tUeueT4Qh65U4z-R_BAng}{172.27.23.3}{minmin/172.27.23.3:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2015-12-29 19:49:16,754][INFO ][http                     ] [node-1] publish_address {minmin/172.27.23.3:9201}, bound_addresses {172.27.23.3:9201}
+[2015-12-29 19:49:16,754][INFO ][node                     ] [node-1] started
+[2015-12-29 19:49:17,337][INFO ][gateway                  ] [node-1] recovered [1] indices into cluster_state
+[2015-12-29 19:50:39,245][INFO ][cluster.metadata         ] [node-1] [weibo3] creating index, cause [api], templates [], shards [10]/[1], mappings [weibo2]
+[2015-12-29 19:51:19,526][INFO ][cluster.metadata         ] [node-1] [weibo] creating index, cause [auto(index api)], templates [], shards [5]/[1], mappings [weibo]
+[2015-12-29 19:51:20,329][INFO ][cluster.metadata         ] [node-1] [weibo] update_mapping [weibo]
+[2015-12-29 19:52:31,156][INFO ][rest.suppressed          ] /weibo3/weibo2 Params: {index=weibo3, type=weibo2}
+java.lang.IllegalArgumentException: No feature for name [weibo2]
+	at org.elasticsearch.action.admin.indices.get.GetIndexRequest$Feature.fromName(GetIndexRequest.java:82)
+	at org.elasticsearch.action.admin.indices.get.GetIndexRequest$Feature.convertToFeatures(GetIndexRequest.java:95)
+	at org.elasticsearch.rest.action.admin.indices.get.RestGetIndicesAction.handleRequest(RestGetIndicesAction.java:77)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:54)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:207)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:166)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:128)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:86)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:348)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:75)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 19:52:44,185][INFO ][rest.suppressed          ] /weibo/weibo Params: {index=weibo, type=weibo}
+java.lang.IllegalArgumentException: No feature for name [weibo]
+	at org.elasticsearch.action.admin.indices.get.GetIndexRequest$Feature.fromName(GetIndexRequest.java:82)
+	at org.elasticsearch.action.admin.indices.get.GetIndexRequest$Feature.convertToFeatures(GetIndexRequest.java:95)
+	at org.elasticsearch.rest.action.admin.indices.get.RestGetIndicesAction.handleRequest(RestGetIndicesAction.java:77)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:54)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:207)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:166)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:128)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:86)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:348)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:75)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 20:17:17,140][INFO ][rest.suppressed          ] /weibo/weibo/ Params: {index=weibo, type=weibo}
+java.lang.IllegalArgumentException: No feature for name [weibo]
+	at org.elasticsearch.action.admin.indices.get.GetIndexRequest$Feature.fromName(GetIndexRequest.java:82)
+	at org.elasticsearch.action.admin.indices.get.GetIndexRequest$Feature.convertToFeatures(GetIndexRequest.java:95)
+	at org.elasticsearch.rest.action.admin.indices.get.RestGetIndicesAction.handleRequest(RestGetIndicesAction.java:77)
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:54)
+	at org.elasticsearch.rest.RestController.executeHandler(RestController.java:207)
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:166)
+	at org.elasticsearch.http.HttpServer.internalDispatchRequest(HttpServer.java:128)
+	at org.elasticsearch.http.HttpServer$Dispatcher.dispatchRequest(HttpServer.java:86)
+	at org.elasticsearch.http.netty.NettyHttpServerTransport.dispatchRequest(NettyHttpServerTransport.java:348)
+	at org.elasticsearch.http.netty.HttpRequestHandler.messageReceived(HttpRequestHandler.java:63)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:60)
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:75)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-29 22:16:53,280][INFO ][node                     ] [node-1] stopping ...
+[2015-12-29 22:16:53,342][INFO ][node                     ] [node-1] stopped
+[2015-12-29 22:16:53,343][INFO ][node                     ] [node-1] closing ...
+[2015-12-29 22:16:53,347][INFO ][node                     ] [node-1] closed

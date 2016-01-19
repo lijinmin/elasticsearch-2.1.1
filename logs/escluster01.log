@@ -1,0 +1,67 @@
+[2015-12-28 15:43:11,283][INFO ][node                     ] [wping] version[2.1.1], pid[4738], build[40e2c53/2015-12-15T13:05:55Z]
+[2015-12-28 15:43:11,283][INFO ][node                     ] [wping] initializing ...
+[2015-12-28 15:43:12,131][ERROR][analysis-ik              ] path
+[2015-12-28 15:43:12,141][INFO ][plugins                  ] [wping] loaded [${elasticsearch.plugin.name}], sites []
+[2015-12-28 15:43:12,254][INFO ][env                      ] [wping] using [1] data paths, mounts [[/home (/dev/sda10)]], net usable_space [36.3gb], net total_space [44.6gb], spins? [possibly], types [ext4]
+[2015-12-28 15:43:16,114][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2015-12-28 15:43:16,115][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2015-12-28 15:43:16,202][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2015-12-28 15:43:32,260][INFO ][node                     ] [wping] initialized
+[2015-12-28 15:43:32,261][INFO ][node                     ] [wping] starting ...
+[2015-12-28 15:43:32,615][ERROR][bootstrap                ] [wping] Exception
+BindTransportException[Failed to bind to [9300-9400]]; nested: ChannelException[Failed to bind to: wping/192.168.10.175:9400]; nested: BindException[无法指定被请求的地址];
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:474)
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:442)
+	at org.elasticsearch.transport.netty.NettyTransport.doStart(NettyTransport.java:319)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:68)
+	at org.elasticsearch.transport.TransportService.doStart(TransportService.java:170)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:68)
+	at org.elasticsearch.node.Node.start(Node.java:252)
+	at org.elasticsearch.bootstrap.Bootstrap.start(Bootstrap.java:221)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:287)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:35)
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: wping/192.168.10.175:9400
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at org.elasticsearch.transport.netty.NettyTransport$1.onPortNumber(NettyTransport.java:456)
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:69)
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:452)
+	... 9 more
+Caused by: java.net.BindException: 无法指定被请求的地址
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-28 15:43:32,643][INFO ][node                     ] [wping] stopping ...
+[2015-12-28 15:43:32,654][INFO ][node                     ] [wping] stopped
+[2015-12-28 15:43:32,654][INFO ][node                     ] [wping] closing ...
+[2015-12-28 15:43:32,670][INFO ][node                     ] [wping] closed
+[2015-12-28 15:44:25,543][INFO ][node                     ] [wping] version[2.1.1], pid[4874], build[40e2c53/2015-12-15T13:05:55Z]
+[2015-12-28 15:44:25,544][INFO ][node                     ] [wping] initializing ...
+[2015-12-28 15:44:25,831][ERROR][analysis-ik              ] path
+[2015-12-28 15:44:25,832][INFO ][plugins                  ] [wping] loaded [${elasticsearch.plugin.name}], sites []
+[2015-12-28 15:44:25,856][INFO ][env                      ] [wping] using [1] data paths, mounts [[/home (/dev/sda10)]], net usable_space [36.3gb], net total_space [44.6gb], spins? [possibly], types [ext4]
+[2015-12-28 15:44:28,262][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2015-12-28 15:44:28,263][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2015-12-28 15:44:28,267][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2015-12-28 15:44:33,335][INFO ][node                     ] [wping] initialized
+[2015-12-28 15:44:33,335][INFO ][node                     ] [wping] starting ...
+[2015-12-28 15:44:33,407][INFO ][transport                ] [wping] publish_address {lijinmin/192.168.10.190:9300}, bound_addresses {192.168.10.190:9300}
+[2015-12-28 15:44:33,434][INFO ][discovery                ] [wping] escluster01/GvNriqKjReWkuQLjBrzLEQ
+[2015-12-28 15:44:37,966][INFO ][cluster.service          ] [wping] new_master {wping}{GvNriqKjReWkuQLjBrzLEQ}{192.168.10.190}{lijinmin/192.168.10.190:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2015-12-28 15:44:37,983][INFO ][http                     ] [wping] publish_address {lijinmin/192.168.10.190:9200}, bound_addresses {192.168.10.190:9200}
+[2015-12-28 15:44:37,983][INFO ][node                     ] [wping] started
+[2015-12-28 15:44:38,128][INFO ][gateway                  ] [wping] recovered [0] indices into cluster_state
+[2015-12-28 15:48:04,023][INFO ][node                     ] [wping] stopping ...
+[2015-12-28 15:48:04,077][INFO ][node                     ] [wping] stopped
+[2015-12-28 15:48:04,077][INFO ][node                     ] [wping] closing ...
+[2015-12-28 15:48:04,105][INFO ][node                     ] [wping] closed

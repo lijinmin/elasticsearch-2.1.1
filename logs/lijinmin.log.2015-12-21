@@ -1,0 +1,170 @@
+[2015-12-21 17:42:33,529][INFO ][node                     ] [node-1] version[2.1.1], pid[3659], build[40e2c53/2015-12-15T13:05:55Z]
+[2015-12-21 17:42:33,530][INFO ][node                     ] [node-1] initializing ...
+[2015-12-21 17:42:33,829][ERROR][analysis-ik              ] path
+[2015-12-21 17:42:33,831][INFO ][plugins                  ] [node-1] loaded [${elasticsearch.plugin.name}], sites []
+[2015-12-21 17:42:33,858][INFO ][env                      ] [node-1] using [1] data paths, mounts [[/home (/dev/sda10)]], net usable_space [36.6gb], net total_space [44.6gb], spins? [possibly], types [ext4]
+[2015-12-21 17:42:36,529][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2015-12-21 17:42:36,530][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2015-12-21 17:42:36,536][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2015-12-21 17:42:37,319][INFO ][node                     ] [node-1] initialized
+[2015-12-21 17:42:37,319][INFO ][node                     ] [node-1] starting ...
+[2015-12-21 17:42:37,402][INFO ][transport                ] [node-1] publish_address {127.0.0.1:9301}, bound_addresses {127.0.0.1:9301}, {[::1]:9301}
+[2015-12-21 17:42:37,417][INFO ][discovery                ] [node-1] lijinmin/wPZgUa5KSzaquzG0Yw2jcg
+[2015-12-21 17:42:41,288][WARN ][discovery.zen.ping.unicast] [node-1] failed to send ping to [{#zen_unicast_6#}{::1}{[::1]:9300}]
+ReceiveTimeoutTransportException[[][[::1]:9300][internal:discovery/zen/unicast] request_id [2] timed out after [3750ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-21 17:42:41,302][WARN ][discovery.zen.ping.unicast] [node-1] failed to send ping to [{#zen_unicast_1#}{127.0.0.1}{127.0.0.1:9300}]
+ReceiveTimeoutTransportException[[][127.0.0.1:9300][internal:discovery/zen/unicast] request_id [4] timed out after [3750ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-21 17:42:41,958][INFO ][cluster.service          ] [node-1] new_master {node-1}{wPZgUa5KSzaquzG0Yw2jcg}{127.0.0.1}{127.0.0.1:9301}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2015-12-21 17:42:41,988][INFO ][http                     ] [node-1] publish_address {127.0.0.1:9201}, bound_addresses {127.0.0.1:9201}, {[::1]:9201}
+[2015-12-21 17:42:41,988][INFO ][node                     ] [node-1] started
+[2015-12-21 17:42:42,073][INFO ][gateway                  ] [node-1] recovered [0] indices into cluster_state
+[2015-12-21 17:45:07,585][INFO ][node                     ] [node-1] version[2.1.1], pid[3920], build[40e2c53/2015-12-15T13:05:55Z]
+[2015-12-21 17:45:07,586][INFO ][node                     ] [node-1] initializing ...
+[2015-12-21 17:45:07,904][ERROR][analysis-ik              ] path
+[2015-12-21 17:45:07,905][INFO ][plugins                  ] [node-1] loaded [${elasticsearch.plugin.name}], sites []
+[2015-12-21 17:45:07,931][INFO ][env                      ] [node-1] using [1] data paths, mounts [[/home (/dev/sda10)]], net usable_space [36.6gb], net total_space [44.6gb], spins? [possibly], types [ext4]
+[2015-12-21 17:45:10,381][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2015-12-21 17:45:10,382][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2015-12-21 17:45:10,387][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2015-12-21 17:45:11,134][INFO ][node                     ] [node-1] initialized
+[2015-12-21 17:45:11,134][INFO ][node                     ] [node-1] starting ...
+[2015-12-21 17:45:11,238][INFO ][transport                ] [node-1] publish_address {127.0.0.1:9302}, bound_addresses {127.0.0.1:9302}, {[::1]:9302}
+[2015-12-21 17:45:11,248][INFO ][discovery                ] [node-1] lijinmin/D2eD5w2MS-K97bMWLXbNEw
+[2015-12-21 17:45:15,125][WARN ][discovery.zen.ping.unicast] [node-1] failed to send ping to [{#zen_unicast_1#}{127.0.0.1}{127.0.0.1:9300}]
+ReceiveTimeoutTransportException[[][127.0.0.1:9300][internal:discovery/zen/unicast] request_id [2] timed out after [3750ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-21 17:45:15,133][WARN ][discovery.zen.ping.unicast] [node-1] failed to send ping to [{#zen_unicast_2#}{127.0.0.1}{127.0.0.1:9301}]
+ReceiveTimeoutTransportException[[][127.0.0.1:9301][internal:discovery/zen/unicast] request_id [4] timed out after [3751ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-21 17:45:15,133][WARN ][discovery.zen.ping.unicast] [node-1] failed to send ping to [{#zen_unicast_6#}{::1}{[::1]:9300}]
+ReceiveTimeoutTransportException[[][[::1]:9300][internal:discovery/zen/unicast] request_id [5] timed out after [3751ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-21 17:45:15,134][WARN ][discovery.zen.ping.unicast] [node-1] failed to send ping to [{#zen_unicast_7#}{::1}{[::1]:9301}]
+ReceiveTimeoutTransportException[[][[::1]:9301][internal:discovery/zen/unicast] request_id [6] timed out after [3751ms]]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:645)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-21 17:45:15,797][INFO ][cluster.service          ] [node-1] new_master {node-1}{D2eD5w2MS-K97bMWLXbNEw}{127.0.0.1}{127.0.0.1:9302}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2015-12-21 17:45:15,817][INFO ][http                     ] [node-1] publish_address {127.0.0.1:9202}, bound_addresses {127.0.0.1:9202}, {[::1]:9202}
+[2015-12-21 17:45:15,818][INFO ][node                     ] [node-1] started
+[2015-12-21 17:45:15,973][INFO ][gateway                  ] [node-1] recovered [0] indices into cluster_state
+[2015-12-21 17:46:59,635][WARN ][transport.netty          ] [node-1] exception caught on transport layer [[id: 0x64421b49, /127.0.0.1:40803 => /127.0.0.1:9301]], closing connection
+java.io.IOException: 断开的管道
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.jboss.netty.channel.socket.nio.SocketSendBufferPool$UnpooledSendBuffer.transferTo(SocketSendBufferPool.java:203)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.write0(AbstractNioWorker.java:201)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.writeFromUserCode(AbstractNioWorker.java:146)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleAcceptedSocket(NioServerSocketPipelineSink.java:99)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:36)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:574)
+	at org.jboss.netty.channel.Channels.write(Channels.java:704)
+	at org.jboss.netty.channel.Channels.write(Channels.java:671)
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:348)
+	at org.elasticsearch.transport.netty.NettyTransportChannel.sendResponse(NettyTransportChannel.java:103)
+	at org.elasticsearch.transport.netty.NettyTransportChannel.sendResponse(NettyTransportChannel.java:75)
+	at org.elasticsearch.discovery.zen.ping.unicast.UnicastZenPing$UnicastPingRequestHandler.messageReceived(UnicastZenPing.java:522)
+	at org.elasticsearch.discovery.zen.ping.unicast.UnicastZenPing$UnicastPingRequestHandler.messageReceived(UnicastZenPing.java:518)
+	at org.elasticsearch.transport.netty.MessageChannelHandler.handleRequest(MessageChannelHandler.java:244)
+	at org.elasticsearch.transport.netty.MessageChannelHandler.messageReceived(MessageChannelHandler.java:114)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:75)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-21 17:46:59,644][WARN ][transport.netty          ] [node-1] exception caught on transport layer [[id: 0xd3ac6836, /0:0:0:0:0:0:0:1:59949 => /0:0:0:0:0:0:0:1:9301]], closing connection
+java.io.IOException: 断开的管道
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.jboss.netty.channel.socket.nio.SocketSendBufferPool$UnpooledSendBuffer.transferTo(SocketSendBufferPool.java:203)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.write0(AbstractNioWorker.java:201)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.writeFromUserCode(AbstractNioWorker.java:146)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleAcceptedSocket(NioServerSocketPipelineSink.java:99)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:36)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:574)
+	at org.jboss.netty.channel.Channels.write(Channels.java:704)
+	at org.jboss.netty.channel.Channels.write(Channels.java:671)
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:348)
+	at org.elasticsearch.transport.netty.NettyTransportChannel.sendResponse(NettyTransportChannel.java:103)
+	at org.elasticsearch.transport.netty.NettyTransportChannel.sendResponse(NettyTransportChannel.java:75)
+	at org.elasticsearch.discovery.zen.ping.unicast.UnicastZenPing$UnicastPingRequestHandler.messageReceived(UnicastZenPing.java:522)
+	at org.elasticsearch.discovery.zen.ping.unicast.UnicastZenPing$UnicastPingRequestHandler.messageReceived(UnicastZenPing.java:518)
+	at org.elasticsearch.transport.netty.MessageChannelHandler.handleRequest(MessageChannelHandler.java:244)
+	at org.elasticsearch.transport.netty.MessageChannelHandler.messageReceived(MessageChannelHandler.java:114)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:75)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-12-21 17:47:00,138][INFO ][node                     ] [node-1] stopping ...
+[2015-12-21 17:47:00,139][INFO ][node                     ] [node-1] stopping ...
+[2015-12-21 17:47:02,151][INFO ][node                     ] [node-1] stopped
+[2015-12-21 17:47:02,151][INFO ][node                     ] [node-1] closing ...
+[2015-12-21 17:47:02,151][INFO ][node                     ] [node-1] stopped
+[2015-12-21 17:47:02,152][INFO ][node                     ] [node-1] closing ...
+[2015-12-21 17:47:03,335][INFO ][node                     ] [node-1] closed
+[2015-12-21 17:47:03,335][INFO ][node                     ] [node-1] closed

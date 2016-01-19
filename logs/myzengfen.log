@@ -1,0 +1,20 @@
+[2015-12-28 17:50:43,946][INFO ][node                     ] [node-1] version[2.1.1], pid[15713], build[40e2c53/2015-12-15T13:05:55Z]
+[2015-12-28 17:50:43,947][INFO ][node                     ] [node-1] initializing ...
+[2015-12-28 17:50:44,229][ERROR][analysis-ik              ] path
+[2015-12-28 17:50:44,231][INFO ][plugins                  ] [node-1] loaded [${elasticsearch.plugin.name}], sites []
+[2015-12-28 17:50:44,259][INFO ][env                      ] [node-1] using [1] data paths, mounts [[/home (/dev/sda10)]], net usable_space [36.3gb], net total_space [44.6gb], spins? [possibly], types [ext4]
+[2015-12-28 17:50:46,763][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/mydict.dic
+[2015-12-28 17:50:46,764][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/single_word_low_freq.dic
+[2015-12-28 17:50:46,768][INFO ][ik-analyzer              ] [Dict Loading]ik/custom/ext_stopword.dic
+[2015-12-28 17:50:47,547][INFO ][node                     ] [node-1] initialized
+[2015-12-28 17:50:47,547][INFO ][node                     ] [node-1] starting ...
+[2015-12-28 17:50:47,617][INFO ][transport                ] [node-1] publish_address {lijinmin/192.168.10.190:9300}, bound_addresses {192.168.10.190:9300}
+[2015-12-28 17:50:47,627][INFO ][discovery                ] [node-1] myzengfen/5JFxNordSEyWjQUmJXti6w
+[2015-12-28 17:50:50,678][INFO ][cluster.service          ] [node-1] new_master {node-1}{5JFxNordSEyWjQUmJXti6w}{192.168.10.190}{lijinmin/192.168.10.190:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2015-12-28 17:50:50,715][INFO ][http                     ] [node-1] publish_address {lijinmin/192.168.10.190:9200}, bound_addresses {192.168.10.190:9200}
+[2015-12-28 17:50:50,715][INFO ][node                     ] [node-1] started
+[2015-12-28 17:50:50,790][INFO ][gateway                  ] [node-1] recovered [0] indices into cluster_state
+[2015-12-28 18:00:15,405][INFO ][node                     ] [node-1] stopping ...
+[2015-12-28 18:00:15,446][INFO ][node                     ] [node-1] stopped
+[2015-12-28 18:00:15,446][INFO ][node                     ] [node-1] closing ...
+[2015-12-28 18:00:15,474][INFO ][node                     ] [node-1] closed
